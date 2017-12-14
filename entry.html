@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>entry</title>
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<h1>Title</h1>
+
+	<div class="container">
+		<div class="entry">
+			<div class="data">
+				<h3 class="entry-title">entry title<span class="entry-source">url</span></h3>
+				<p class="entry-detail"><span class="entry-date">hace 2 sem</span><span class="entry-user"> by <a href="#">user</a></span></p>
+			</div>
+			<div class="meta">
+				<a href="entry.html#comment-textarea"><span>comments</span></a>
+				<span>votes up</span>
+				<span>votes down</span>
+			</div>
+		</div>
+
+		<div class="add-comment">
+			<form method="post" action="comment">
+				<input type="hidden" name="entry-id" value="">
+				<input type="hidden" name="comment-id" value="">
+				<div>
+					<label for="comment-textarea">add your comment</label>
+					<textarea id="comment-textarea" name="text" rows="6" cols="60"></textarea>
+				</div>
+				<div>
+					<label for="comment-username">username</label>
+					<input id="comment-username" type="text" name="username">
+				</div>
+				<div>
+					<label for="comment-email">email</label>
+					<input type="email" name="email">
+				</div>
+				<input type="submit" value="submit comment">
+			</form>
+		</div>
+
+		<div class="comments">
+			<h3>Comments</h3>
+			<div class="item-comment"> 
+				<div class="comment-detail">
+					<p class="comment-meta"><span class="comment-date">hace 1 hour</span><span class="comment-user"> by <a href="#">user2</a></span></p>
+					<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et. </p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

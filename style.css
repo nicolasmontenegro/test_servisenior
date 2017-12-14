@@ -1,0 +1,15 @@
+body{
+	background-color: rgba(200, 200, 200, 1);
+}
+.entry, .add-comment, .comments .item-comment{
+	background-color: rgba(255, 255, 255, 1);
+	margin: 1em;
+	padding-left: .5em;
+}
+.item-comment{
+	margin-left: 1em;
+}
+.item-comment .item-comment{
+	border-left: 1px solid gray;
+	padding-left: .5em;
+}
