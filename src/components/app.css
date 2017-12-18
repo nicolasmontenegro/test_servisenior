@@ -1,0 +1,124 @@
+h1, h2, h3, h4, h5, h6, h7{
+	font-family: 'Fira Sans', sans-serif;
+}
+p, label{
+	font-family: 'Cantarell', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	background-color: rgba(200, 200, 200, 1);
+	margin: .5em;
+}
+.entry, .add-comment, .comments, .comments .item-comment{
+	background-color: rgba(255, 255, 255, 1);
+	margin: 1em;
+	padding-left: .5em;
+}
+.entry{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+.entry .data{
+	min-width: 75%;
+}
+.entry .meta{
+	/*width: 90%;*/
+}
+.entry .meta p{
+	margin: 0;
+	margin-left: 0;
+	margin-right: .6em;
+}
+.entry .entry-title, .comments .comments-title{
+	padding-top: .2em;
+	padding-bottom: .2em;
+	margin: 0;
+}
+.entry .entry-detail, .item-comment .comment-meta{
+	margin-top: 0;
+	margin-bottom: .2em;
+	font-size: 75%;
+}
+.entry .entry-detail .entry-user a, .item-comment .comment-user a{
+	font-weight: bold;
+}
+.entry .entry-source{
+	font-size: 65%;
+	color: grey;
+	padding-left: .5em;
+	font-weight: normal;
+}
+.entry .entry-meta-link{
+	margin-left: .6em;
+	font-size: 125%;
+}
+/*.item-comment{
+	margin-left: 1em;
+}*/
+.comments > .item-comment{
+	margin: 0;
+	padding: 0.2em 0 0.2em 0;
+}
+.item-comment .item-comment{
+	border-left: 1px solid gray;
+	padding: .25em 0em 0.25em .8em;
+	margin: 0;
+}
+.item-comment .comment-text{
+	margin: -.5em 0 0 0;
+}
+form label{
+	display: block;
+	font-size: 90%;
+}
+form input:not([type="submit"]), form textarea {
+	border-radius: 10px;
+	border: .5px solid #0006;
+	padding: .25em;
+	min-width: 10em;
+	max-width: calc(100% - 1.2em);
+}
+form input:not([type="submit"]){
+	width: 15em;
+}
+form input[type^='submit']{
+	border-radius: 3px;
+	border: .5px solid #0006;
+	padding: .25em;
+	min-width: 10em;
+	max-width: calc(100% - 1.2em);
+	margin: .75em auto .75em auto;
+}
+.svg-icon{
+	height: .7em;
+	width: .7em;
+	padding-right: 0.1em;
+	padding-left: 0.1em;
+}
+@media all and (max-width: 640px) {
+	.entry, .add-comment, .comments, .comments .item-comment{
+		margin: 0;
+	}
+
+	.entry{
+		display: flex;
+		flex-flow: column;
+	}
+	.entry .meta{
+		text-align: center;
+		margin-left: -1em;
+	}
+	.entry .entry-meta-link{
+		font-size: 100%;
+	}
+
+	.entry .meta p{
+		margin: 0;
+		margin-left: 0;
+		margin-right: .6em;
+	}
+}
