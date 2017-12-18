@@ -4,9 +4,9 @@ Proyecto en base de NodeJs + React
 
 Este proyecto usa NodeJS y NPM.
 
-1.- [npm install] para obtener dependencias.
-2.- [npm start] para ejecutar el proyecto.
-3.- A través de un navegador ingresar a la dirección [http://localhost:3000]. 
+1.- `npm install` para obtener dependencias.<br>
+2.- `npm start` para ejecutar el proyecto.<br>
+3.- A través de un navegador ingresar a la dirección `http://localhost:3000`. <br>
 
 Puede usar cualquier navegador de última generación. Verifique la opción para almacenar cookies.
 
